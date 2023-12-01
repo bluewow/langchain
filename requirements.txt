@@ -2,3 +2,5 @@ langchain
 fastapi
 uvicorn
 langserve
+python-dotenv
+openai

@@ -7,6 +7,7 @@ WORKDIR /app
 # 필요한 라이브러리 설치
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install sse_starlette
 
 # 애플리케이션 파일 복사
 COPY . .

@@ -1,8 +1,7 @@
 from typing import List
-
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import BaseOutputParser
-from serve import model
+from setting import model
 
 # 참고 https://python.langchain.com/docs/get_started/quickstart
 
