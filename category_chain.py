@@ -1,7 +1,7 @@
 from typing import List
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import BaseOutputParser
-from setting import model
+from setting import chatModel
 
 # 참고 https://python.langchain.com/docs/get_started/quickstart
 
@@ -23,4 +23,4 @@ chat_prompt = ChatPromptTemplate.from_messages([
     ("system", template),
     ("human", human_template),
 ])
-category_chain = chat_prompt | model | CommaSeparatedListOutputParser()
+category_chain = chat_prompt | chatModel | CommaSeparatedListOutputParser()

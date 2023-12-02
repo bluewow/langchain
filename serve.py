@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 # 환경변수 세팅
 load_dotenv(".env")
 
-from setting import model
+from setting import chatModel
 
 app = FastAPI(
     title="LangChain Server",
@@ -17,7 +17,7 @@ from category_chain import category_chain
 
 # LangChain 을 FastAPI 라우트에 추가하는 함수
 add_routes(app, category_chain, path="/category_chain")
-add_routes(app, model, path="/openai")
+add_routes(app, chatModel, path="/openai")
 
 @app.get("/health")
 def health_check():
