@@ -4,3 +4,4 @@ uvicorn
 langserve
 python-dotenv
 openai
+pandas
