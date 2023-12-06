@@ -5,3 +5,5 @@ langserve
 python-dotenv
 openai
 pandas
+faiss-cpu
+tiktoken

@@ -23,7 +23,7 @@ def calculate_accuracy_and_score(file_path):
     return data, accuracy, score, total_score
 
 
-if __name__ == "__main__":
+def play():
     data, accuracy, score, total_score = calculate_accuracy_and_score("./2024_questions.csv")
     print(data[['이름', '정답', '답변', 'Correct']])
     print("---------------------")
